@@ -1,6 +1,6 @@
 cask "omniview" do
-  version "0.7.0"
-  sha256 "7c3d5aeaf233cdc7ff0cd8eecc39a1dc6174d8529ddad2b9171a5cf1d658ee23"
+  version "0.7.2"
+  sha256 "b46be2530bf8bd5637c5802d7c9bb0b8804f8127c77a030b9ad49dbd21bf868a"
 
   url "https://github.com/omniviewdev/omniview/releases/download/v#{version}/Omniview_#{version}_darwin_universal.dmg"
   name "Omniview"
@@ -13,6 +13,7 @@ cask "omniview" do
   end
 
   app "Omniview.app"
+  binary "#{appdir}/Omniview.app/Contents/MacOS/omniview-dev", target: "omniview-dev"
 
   zap trash: [
     "~/Library/Application Support/com.omniview.omniview",
