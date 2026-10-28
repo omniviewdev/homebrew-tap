@@ -1,6 +1,6 @@
 cask "omniview-nightly" do
-  version "0.0.0-nightly.20261027"
-  sha256 "bd359062fd965bb243f3640610be503d2e7f1cc074184329637415faf1917bfd"
+  version "0.0.0-nightly.20261028"
+  sha256 "6a301874f95e0f95d759140bbbc700d5d1b894fbbe1b9a9ffb3f52549ebe9260"
 
   url "https://github.com/omniviewdev/omniview/releases/download/nightly/Omniview_#{version}_darwin_universal.dmg"
   name "Omniview Nightly"
@@ -13,6 +13,7 @@ cask "omniview-nightly" do
   end
 
   app "Omniview.app"
+  binary "#{appdir}/Omniview.app/Contents/MacOS/omniview-dev", target: "omniview-dev"
 
   zap trash: [
     "~/Library/Application Support/com.omniview.omniview",
