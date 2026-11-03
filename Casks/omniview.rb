@@ -1,6 +1,6 @@
 cask "omniview" do
-  version "0.27.1"
-  sha256 "4fd6574dfbb96f3108e5190b85b50ec54124635583383b9e06e701d94918d351"
+  version "0.27.2"
+  sha256 "bb8e18154c6110e8f400dd96c3aacc18ab03f6aec20b29f1253927208f600f70"
 
   url "https://github.com/omniviewdev/omniview/releases/download/v#{version}/Omniview_#{version}_darwin_universal.dmg"
   name "Omniview"
