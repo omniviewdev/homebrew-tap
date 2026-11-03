@@ -1,6 +1,6 @@
 cask "omniview" do
-  version "0.25.0"
-  sha256 "8630e5d780c859d8737631a3cb456c39e095ebd95760704747feb0b2e1e29d7f"
+  version "0.27.1"
+  sha256 "4fd6574dfbb96f3108e5190b85b50ec54124635583383b9e06e701d94918d351"
 
   url "https://github.com/omniviewdev/omniview/releases/download/v#{version}/Omniview_#{version}_darwin_universal.dmg"
   name "Omniview"
@@ -12,6 +12,7 @@ cask "omniview" do
     strategy :github_latest
   end
 
+  depends_on macos: :monterey
   app "Omniview.app"
   binary "#{appdir}/Omniview.app/Contents/MacOS/omniview-dev", target: "omniview-dev"
 
