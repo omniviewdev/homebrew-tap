@@ -9,7 +9,7 @@ cask "omniview-nightly" do
 
   livecheck do
     url "https://github.com/omniviewdev/omniview/releases/tag/nightly"
-    regex(/Omniview[._-]v?(\d+(?:\.\d+)*-nightly\.\d+)[._-]darwin/i)
+    regex(/Omniview[._-]v?(\d+(?:\.\d+)*-nightly(?:\.\d+)+)[._-]darwin/i)
   end
 
   depends_on macos: :ventura
