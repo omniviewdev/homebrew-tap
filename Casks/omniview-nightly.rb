@@ -1,6 +1,6 @@
 cask "omniview-nightly" do
-  version "0.0.0-nightly.20261122.146.1"
-  sha256 "73b6051f17efc0a38923cf401e52d8a66b967c7d8a2958e31eaf1997f898de97"
+  version "0.0.0-nightly.20261123.147.1"
+  sha256 "fb1f47b3c2f1faf7f507727bc43785e72c4c6f3d17b16f109bb928ffd25b78f8"
 
   url "https://github.com/omniviewdev/omniview/releases/download/nightly/Omniview_#{version}_darwin_universal.dmg"
   name "Omniview Nightly"
